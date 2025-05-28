@@ -93,8 +93,8 @@
 	lockid = "manor"
 
 /obj/item/roguekey/heir
-	name = "nobility key"
-	desc = "A highly coveted key belonging to the doors of the nobles of this realm."
+	name = "heir room key"
+	desc = "A highly coveted key belonging to the doors of the heirs of this realm."
 	icon_state = "hornkey"
 	lockid = "heir"
 
@@ -125,6 +125,12 @@
 /obj/item/roguekey/sheriff
 	name = "Knight Captain's key"
 	desc = "This key belongs to the captain of the guard."
+	icon_state = "cheesekey"
+	lockid = "sheriff"
+
+/obj/item/roguekey/bailiff
+	name = "bailiff's key"
+	desc = "This key belongs to the bailiff."
 	icon_state = "cheesekey"
 	lockid = "sheriff"
 
@@ -164,17 +170,32 @@
 	icon_state = "greenkey"
 	lockid = "innkeep"
 
-/obj/item/roguekey/janitor
-	name = "janitor key"
-	desc = "The key to the janitor's very own abode."
-	icon_state = "greenkey"
-	lockid = "janitor"
-
 /obj/item/roguekey/velder
 	name = "elder's key"
 	desc = "This key should open and close the elder's home."
 	icon_state = "brownkey"
 	lockid = "velder"
+
+/obj/item/roguekey/tavern/village
+	lockid = "vtavern"
+
+/obj/item/roguekey/roomi/village
+	lockid = "vroomi"
+
+/obj/item/roguekey/roomii/village
+	lockid = "vroomii"
+
+/obj/item/roguekey/roomiii/village
+	lockid = "vroomiii"
+
+/obj/item/roguekey/roomiv/village
+	lockid = "vroomiv"
+
+/obj/item/roguekey/roomv/village
+	lockid = "vroomv"
+
+/obj/item/roguekey/roomvi/village
+	lockid = "vroomvi"
 
 /obj/item/roguekey/roomi
 	name = "room I key"
@@ -261,6 +282,7 @@
 	desc = "The key to a vampire lord's castle."
 	icon_state = "vampkey"
 	lockid = "mansionvampire"
+//
 
 /obj/item/roguekey/blacksmith
 	name = "blacksmith key"
@@ -268,11 +290,27 @@
 	icon_state = "brownkey"
 	lockid = "blacksmith"
 
+/obj/item/roguekey/blacksmith/town
+	name = "town blacksmith key"
+	lockid = "townblacksmith"
+
+/obj/item/roguekey/walls
+	name = "walls key"
+	desc = "This is a rusty key."
+	icon_state = "rustkey"
+	lockid = "walls"
+
 /obj/item/roguekey/farm
 	name = "farm key"
 	desc = "This is a rusty key that'll open farm doors."
 	icon_state = "rustkey"
 	lockid = "farm"
+
+/obj/item/roguekey/butcher
+	name = "butcher key"
+	desc = "This is a rusty key that'll open butcher doors."
+	icon_state = "rustkey"
+	lockid = "butcher"
 
 /obj/item/roguekey/church
 	name = "church key"
@@ -289,18 +327,24 @@
 /obj/item/roguekey/tower
 	name = "tower key"
 	desc = "This key should open anything within the tower."
-	icon_state = "eyekey"
+	icon_state = "greenkey"
 	lockid = "tower"
+
+/obj/item/roguekey/mage
+	name = "magicians's key"
+	desc = "This is the court wizard's key. It watches you..."
+	icon_state = "eyekey"
+	lockid = "mage"
 
 /obj/item/roguekey/graveyard
 	name = "crypt key"
-	desc = "This rusty key bequests access to the crypt."
+	desc = "This rusty key belongs to the gravekeeper."
 	icon_state = "rustkey"
 	lockid = "graveyard"
 
 /obj/item/roguekey/artificer
 	name = "artificer's key"
-	desc = "This bronze key should open the Artificer's hall."
+	desc = "This bronze key should open the Artificer's guild."
 	icon_state = "brownkey"
 	lockid = "artificer"
 
@@ -310,47 +354,33 @@
 	icon_state = "brownkey"
 	lockid = "tailor"
 
-/obj/item/roguekey/adventurers_guild
-	name = "adventurer's guild key"
-	desc = "Largely ceremonial - the proliferation of these keys mean most guildhalls end up open-access."
+/obj/item/roguekey/mercenary
+	name = "mercenary key"
+	desc = "Why, a mercenary would not kick doors down."
 	icon_state = "greenkey"
-	lockid = "adventurersguild"
+	lockid = "merc"
 
-/obj/item/roguekey/mages_university
-	name = "mage's university key"
-	desc = "While somewhat more exclusive than their adventurer's guild counterparts, the keys to each mage's university guildhall are \
-			still commonplace finds for the road-wary - no doubt by design."
-	icon_state = "greenkey"
-	lockid = "magesuniversity"
-
-/obj/item/roguekey/mages_university/private
-	name = "mage's university private key"
-	desc = "More exclusive than it's nigh-public counterpart, the private key for the university denotes a scholar's more permanent residence \
-			for it's assigned branch. This particular key allow access to more exclusive portions of Sunmarch's Mages University."
-	icon_state = "ekey"
-	lockid = "magesuniversity_private"
-
-/obj/item/roguekey/mages_university/head_mage
-	name = "head mage key"
-	desc = "The one key in each university branch that isn't as prolific as the rest - the head mage's own key for the office and private quarters."
-	icon_state = "spikekey"
-	lockid = "head_mage"
-
-/obj/item/roguekey/deacon
-	name = "deacon key"
+/obj/item/roguekey/physician
+	name = "physician key"
 	desc = "The key smells of herbs, feeling soothing to the touch."
 	icon_state = "greenkey"
-	lockid = "deacon"
+	lockid = "physician"
 
-/obj/item/roguekey/underking
+/obj/item/roguekey/undercroft
+	name = "undercroft key"
+	desc = "This key opens the doors leading into the church's undercroft."
+	icon_state = "brownkey"
+	lockid = "undercroft"
+
+/obj/item/roguekey/inhumen
 	name = "ancient key"
 	desc = "A ancient, rusty key. There's no telling where this leads."
 	icon_state = "rustkey"
-	lockid = "underking"
+	lockid = "inhumen"
 
 /obj/item/roguekey/hand
 	name = "hand's key"
-	desc = "This regal key belongs to the Marquis' Right Hand."
+	desc = "This regal key belongs to the Grand Duke's Right Hand."
 	icon_state = "cheesekey"
 	lockid = "hand"
 
@@ -366,7 +396,39 @@
 	icon_state = "ekey"
 	lockid = "archive"
 
+//grenchensnacker
+/obj/item/roguekey/porta
+	name = "strange key"
+	desc = "Was this key enchanted by a wizard locksmith...?"//what is grenchensnacker.
+	icon_state = "eyekey"
+	lockid = "porta"
+
 //Apartment and shop keys
+/obj/item/roguekey/apartments
+	name = ""
+	icon_state = ""
+	lockid = ""
+
+/obj/item/roguekey/apartments/apartment1
+	name = "apartment i key"
+	icon_state = "brownkey"
+	lockid = "apartment1"
+
+/obj/item/roguekey/apartments/apartment2
+	name = "apartment ii key"
+	icon_state = "brownkey"
+	lockid = "apartment2"
+
+/obj/item/roguekey/apartments/apartment3
+	name = "apartment iii key"
+	icon_state = "brownkey"
+	lockid = "apartment3"
+
+/obj/item/roguekey/apartments/apartment4
+	name = "apartment iv key"
+	icon_state = "brownkey"
+	lockid = "apartment4"
+
 /obj/item/roguekey/apartments/stall1
 	name = "stall i key"
 	icon_state = "brownkey"
@@ -382,6 +444,11 @@
 	icon_state = "brownkey"
 	lockid = "stall3"
 
+/obj/item/roguekey/apartments/stall4
+	name = "stall iv key"
+	icon_state = "brownkey"
+	lockid = "stall4"
+
 /obj/item/roguekey/apartments/stable1
 	name = "stable i key"
 	icon_state = "brownkey"
@@ -392,7 +459,7 @@
 	icon_state = "brownkey"
 	lockid = "stable2"
 
-//custom key /// SOLARIS NOTE: turbobroken
+//custom key
 /obj/item/roguekey/custom
 	name = "custom key"
 	desc = "A custom key designed by a blacksmith."

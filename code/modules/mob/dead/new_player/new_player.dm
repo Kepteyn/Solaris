@@ -597,9 +597,10 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 	omegalist += list(GLOB.courtier_positions)
 	omegalist += list(GLOB.garrison_positions)
 	omegalist += list(GLOB.church_positions)
-	omegalist += list(GLOB.mages_university_positions)
 	omegalist += list(GLOB.yeoman_positions)
 	omegalist += list(GLOB.peasant_positions)
+	omegalist += list(GLOB.mercenary_positions)
+	omegalist += list(GLOB.youngfolk_positions)
 
 	if(istype(SSticker.mode, /datum/game_mode/chaosmode))
 		var/datum/game_mode/chaosmode/C = SSticker.mode
@@ -630,19 +631,23 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 			var/cat_name = ""
 			switch (SSjob.name_occupations[category[1]].department_flag)
 				if (NOBLEMEN)
-					cat_name = "The Nobility"
+					cat_name = "Nobles"
 				if (COURTIERS)
 					cat_name = "Courtiers"
 				if (GARRISON)
-					cat_name = "The Garrison"
+					cat_name = "Garrison"
 				if (CHURCHMEN)
-					cat_name = "The Chapel Of Lights"
-				if (MAGES_UNIVERSITY)
-					cat_name = "Mage's University"
+					cat_name = "Churchmen"
 				if (YEOMEN)
 					cat_name = "Yeomen"
 				if (PEASANTS)
-					cat_name = "Serfs & Peasantry"
+					cat_name = "Peasants"
+				if (SIDEFOLK)
+					cat_name = "Sidefolk"
+				if (MERCENARIES)
+					cat_name = "Mercenaries"
+			//	if (GOBLIN)
+			//		cat_name = "Goblins"
 
 			dat += "<fieldset style='width: 185px; border: 2px solid [cat_color]; display: inline'>"
 			dat += "<legend align='center' style='font-weight: bold; color: [cat_color]'>[cat_name]</legend>"

@@ -2,7 +2,6 @@
 	title = "Priest"
 	flag = PRIEST
 	department_flag = CHURCHMEN
-	selection_color = JCOLOR_CHURCH
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
@@ -89,7 +88,7 @@
 	for(var/mob/living/carbon/human/HU in get_step(src, src.dir))
 		if(!HU.mind)
 			continue
-		if(HU.mind.assigned_role == "Marquis")
+		if(HU.mind.assigned_role == "Grand Duke")
 			continue
 		if(!HU.head)
 			continue

@@ -18,14 +18,13 @@
 /obj/item/organ/penis/proc/update_erect_state()
 	var/oldstate = erect_state
 	var/new_state = ERECT_STATE_NONE
-
 	if(owner)
 		var/mob/living/carbon/human/human = owner
 		if(!human?.sexcon.can_use_penis())
 			new_state = ERECT_STATE_NONE
-		else if(human.sexcon.arousal > 20 && human.sexcon.manual_arousal == 1 || human.sexcon.manual_arousal == 4)
+		else if(human.sexcon.arousal > 20)
 			new_state = ERECT_STATE_HARD
-		else if(human.sexcon.arousal > 10 && human.sexcon.manual_arousal == 1 || human.sexcon.manual_arousal == 3)
+		else if(human.sexcon.arousal > 10)
 			new_state = ERECT_STATE_PARTIAL
 		else
 			new_state = ERECT_STATE_NONE
@@ -61,11 +60,6 @@
 	name = "hemi tapered penis"
 	penis_type = PENIS_TYPE_TAPERED_DOUBLE
 	sheath_type = SHEATH_TYPE_SLIT
-
-/obj/item/organ/penis/tapered_double_mammal
-	name = "hemi tapered penis"
-	penis_type = PENIS_TYPE_TAPERED_DOUBLE
-	sheath_type = SHEATH_TYPE_NORMAL
 
 /obj/item/organ/penis/tapered_double_knotted
 	name = "hemi knotted tapered penis"

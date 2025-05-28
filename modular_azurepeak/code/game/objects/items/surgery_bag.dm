@@ -23,7 +23,7 @@
 		/obj/item/needle
 	)
 
-/obj/item/storage/belt/rogue/surgery_bag/full/deacon
+/obj/item/storage/belt/rogue/surgery_bag/full/physician
 	populate_contents = list(
 	/obj/item/rogueweapon/surgery/scalpel,
 	/obj/item/rogueweapon/surgery/saw,

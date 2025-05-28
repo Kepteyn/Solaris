@@ -19,7 +19,7 @@
 	var/mob/living/carbon/human/H = M
 	if(!H.wear_mask)
 		return FALSE
-	return istype(H.wear_mask, /obj/item/clothing/mask/rogue/deacon)
+	return istype(H.wear_mask, /obj/item/clothing/mask/rogue/physician)
 
 /datum/reagent/rogueacid
 	name = "rogueacid"

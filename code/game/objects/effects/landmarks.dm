@@ -84,21 +84,45 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	delete_after_roundstart = FALSE
 
 /obj/effect/landmark/start/banditlate
-	name = "Banditlate"
+	name = "Bandit"
 	icon_state = "arrow"
-	jobspawn_override = list(/datum/job/roguetown/bandit::title)
+	jobspawn_override = list("Bandit")
 	delete_after_roundstart = FALSE
 
-/obj/effect/landmark/start/wardenlate
-	name = "Wardenlate"
+/obj/effect/landmark/start/bogguardlate
+	name = "Bogguardlate"
 	icon_state = "arrow"
-	jobspawn_override = list(/datum/job/roguetown/bogguardsman::title)
+	jobspawn_override = list("Bog Master", "Bog Guard", "Warden")
 	delete_after_roundstart = FALSE
 
-/obj/effect/landmark/start/townerlate
+/obj/effect/landmark/start/vagrantlate
+	name = "Beggarlate"
+	icon_state = "arrow"
+	jobspawn_override = list("Beggar")
+	delete_after_roundstart = FALSE
+
+/obj/effect/landmark/start/vagabondlate
+	name = "Vagabondlate"
+	icon_state = "arrow"
+	jobspawn_override = list("Vagabond")
+	delete_after_roundstart = FALSE
+
+/obj/effect/landmark/start/desertriderlate
+	name = "DesertRiderlate"
+	icon_state = "arrow"
+	jobspawn_override = list("Desert Rider Mercenary")
+	delete_after_roundstart = FALSE
+
+/obj/effect/landmark/start/mercenarylate
+	name = "Mercenarylate"
+	icon_state = "arrow"
+	jobspawn_override = list("Mercenary")
+	delete_after_roundstart = FALSE
+
+/obj/effect/landmark/start/villagerlate
 	name = "Townerlate"
 	icon_state = "arrow"
-	jobspawn_override = list(/datum/job/roguetown/towner::title)
+	jobspawn_override = list("Towner")
 	delete_after_roundstart = FALSE
 
 /obj/effect/landmark/start/lord
@@ -106,119 +130,188 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/knight
-	name = /datum/job/roguetown/knight::title
+	name = "Knight"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/sheriff
+	name = "Town Sheriff"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/guard_captain
-	name = /datum/job/roguetown/captain::title
+	name = "Knight Captain"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/barkeep
+	name = "Barkeep"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/cook
+	name = "Cook"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/steward
-	name = /datum/job/roguetown/steward::title
+	name = "Steward"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/clerk
-	name = /datum/job/roguetown/clerk::title
+	name = "Clerk"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/magician
-	name = /datum/job/roguetown/magician::title
+	name = "Court Magician"
 	icon_state = "arrow"
 
-/obj/effect/landmark/start/deacon
-	name = /datum/job/roguetown/deacon::title
+/obj/effect/landmark/start/physician
+	name = "Court Physician"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/guardsman
-	name = /datum/job/roguetown/guardsman::title
+	name = "Watchman"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/manorguardsman
-	name = /datum/job/roguetown/manorguard::title
+	name = "Man at Arms"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/bogmaster
+	name = "Bog Master"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/bogguardsman
+	name = "Bog Guard"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/marshal
-	name = /datum/job/roguetown/marshal::title
+	name = "Marshal"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/councillor
-	name = /datum/job/roguetown/councillor::title
+	name = "Councillor"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/veteran
-	name = /datum/job/roguetown/veteran::title
+	name = "Veteran"
 	icon_state = "arrow"
 
-/obj/effect/landmark/start/towner
-	name = /datum/job/roguetown/towner::title
+/obj/effect/landmark/start/dungeoneer
+	name = "Dungeoneer"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/watchman
+	name = "Gatemaster"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/villager
+	name = "Towner"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/woodsman
-	name = /datum/job/roguetown/woodsman::title
+	name = "Town Elder"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/priest
-	name = /datum/job/roguetown/priest::title
+	name = "Priest"
 	icon_state = "arrow"
 
-/obj/effect/landmark/start/acolyte
-	name = /datum/job/roguetown/acolyte::title
+/obj/effect/landmark/start/cleric
+	name = "Cleric"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/monk
+	name = "Acolyte"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/druid
+	name = "Druid"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/templar
-	name = /datum/job/roguetown/templar::title
+	name = "Templar"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/martyr
+	name = "Martyr"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/sergeant
-	name = /datum/job/roguetown/sergeant::title
+	name = "Sergeant"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/merchant
-	name = /datum/job/roguetown/merchant::title
-	icon_state = "arrow"
-
-/obj/effect/landmark/start/tailor
-	name = /datum/job/roguetown/tailor::title
-	icon_state = "arrow"
-
-/obj/effect/landmark/start/wretch
-	name = /datum/job/roguetown/wretch::title
+	name = "Merchant"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/shophand
-	name = /datum/job/roguetown/shophand::title
+	name = "Shophand"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/grabber
+	name = "Grabber"
+	icon_state = "arrow"
+
+
+/obj/effect/landmark/start/innkeep
+	name = "Innkeep"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/archivist
-	name = /datum/job/roguetown/archivist::title
+	name = "Archivist"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/weaponsmith
+	name = "Weaponsmith"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/armorsmith
+	name = "Armorer"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/blacksmith
-	name = /datum/job/roguetown/blacksmith::title
+	name = "Blacksmith"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/tailor
+	name = "Tailor"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/alchemist
-	name = /datum/job/roguetown/alchemist::title
+	name = "Alchemist"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/artificer
-	name = /datum/job/roguetown/artificer::title
+	name = "Artificer"
 	icon_state = "arrow"
 
-/obj/effect/landmark/start/head_mage
-	name = /datum/job/roguetown/head_mage::title
+/obj/effect/landmark/start/scribe
+	name = "Scribe"
 	icon_state = "arrow"
 
-/obj/effect/landmark/start/soilson
-	name = /datum/job/roguetown/soilson::title
+/obj/effect/landmark/start/farmer
+	name = "Soilson"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/beastmonger
+	name = "Butcher"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/cook
+	name = "Cook"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/knavewench
-	name = /datum/job/roguetown/knavewench::title
+	name = "Tapster"
 	icon_state = "arrow"
 
-/obj/effect/landmark/start/janitor
-	name = /datum/job/roguetown/janitor::title
+/obj/effect/landmark/start/gravedigger
+	name = "Mortician"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/mercenary
+	name = "Mercenary"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/vagrant
+	name = "Beggar"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/nobleman
@@ -226,61 +319,99 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/prisonerr
-	name = /datum/job/roguetown/prisonerr::title
+	name = "Prisoner (Solaris Keep)"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/hostage
-	name = /datum/job/roguetown/hostage::title
+	name = "Hostage"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/jester
-	name = /datum/job/roguetown/jester::title
+	name = "Jester"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/hand
-	name = /datum/job/roguetown/hand::title
+	name = "Hand"
 	icon_state = "arrow"
 
-/obj/effect/landmark/start/seneschal
-	name = /datum/job/roguetown/seneschal::title
+/obj/effect/landmark/start/hunter
+	name = "Hunter"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/fisher
+	name = "Fisher"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/lumberjack
+	name = "Lumberjack"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/butler
+	name = "Seneschal"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/barkeeper
+	name = "Innkeeper"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/adventurer
-	name = /datum/job/roguetown/adventurer::title
+	name = "Adventurer"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/courtagent
-	name = /datum/job/roguetown/adventurer/courtagent::title
+	name = "Court Agent"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/lunatic
-	name = /datum/job/roguetown/lunatic::title
+	name = "Lunatic"
 	icon_state = "arrow"
 
 //yrf
 
 /obj/effect/landmark/start/squire
-	name = /datum/job/roguetown/squire::title
+	name = "Squire"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/wapprentice
-	name = /datum/job/roguetown/wapprentice::title
+	name = "Magicians Associate"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/apothicant_apprentice
-	name = /datum/job/roguetown/apothicant_apprentice::title
+	name = "Apothicant Apprentice"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/servant
-	name = /datum/job/roguetown/servant::title
+	name = "Servant"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/churchling
-	name = /datum/job/roguetown/churchling::title
+	name = "Churchling"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/vagabond
+	name = "Vagabond"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/sapprentice
-	name = /datum/job/roguetown/bapprentice::title
+	name = "Smithy Apprentice"
+	icon_state = "arrow"
+
+//goblin
+
+/obj/effect/landmark/start/goblinking
+	name = "Goblin King"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/goblincook
+	name = "Goblin Cook"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/goblinguard
+	name = "Goblin Guard"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/goblinsmith
+	name = "Goblin Smith"
 	icon_state = "arrow"
 
 //Antagonist spawns
@@ -321,6 +452,17 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 /obj/effect/landmark/start/delf/Initialize()
 	. = ..()
 	GLOB.delf_starts += loc
+
+/obj/effect/landmark/start/wretch
+	name = "wretch"
+	icon_state = "arrow"
+	jobspawn_override = list("Wretch")
+
+/obj/effect/landmark/start/wretchlate
+	name = "wretch"
+	icon_state = "arrow"
+	delete_after_roundstart = FALSE
+	jobspawn_override = list("Wretch")
 
 /obj/effect/landmark/start/nukeop_leader
 	name = "nukeop leader"

@@ -35,7 +35,7 @@
 /datum/supply_pack/rogue/Sawbones/surgery_bag
 	name = "Surgery Bag"
 	cost = 30
-	contains = list(/obj/item/storage/belt/rogue/surgery_bag/full/deacon)
+	contains = list(/obj/item/storage/belt/rogue/surgery_bag/full/physician)
 
 /datum/supply_pack/rogue/Sawbones/rapier
 	name = "Rapier"
@@ -65,12 +65,12 @@
 /datum/supply_pack/rogue/Sawbones/trustworthyhat
 	name = "Trustworthy Hat"
 	cost = 5
-	contains = list(/obj/item/clothing/head/roguetown/deacon)
+	contains = list(/obj/item/clothing/head/roguetown/physician)
 
 /datum/supply_pack/rogue/Sawbones/trustworthyrobes
 	name = "Trustworthy Robes"
 	cost = 5
-	contains = list(/obj/item/clothing/suit/roguetown/shirt/robe/deacon)
+	contains = list(/obj/item/clothing/suit/roguetown/shirt/robe/physician)
 
 /datum/supply_pack/rogue/Sawbones/bedroll
 	name = "Bedroll"

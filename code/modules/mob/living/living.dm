@@ -1839,7 +1839,6 @@
 	changeNext_move(CLICK_CD_MELEE)
 	if(m_intent != MOVE_INTENT_SNEAK)
 		visible_message(span_info("[src] looks up."))
-		log_message("looks down a Z-Level.", LOG_GAME)
 	var/turf/ceiling = get_step_multiz(src, UP)
 	var/turf/T = get_turf(src)
 	if(!ceiling) //We are at the highest z-level.
@@ -1972,7 +1971,6 @@
 			ttime = 0
 
 	visible_message(span_info("[src] looks down through [T]."))
-	log_message("looks down a Z-Level.", LOG_GAME)
 
 	if(!do_after(src, ttime, target = src))
 		return

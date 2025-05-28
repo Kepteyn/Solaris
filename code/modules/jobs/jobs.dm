@@ -61,72 +61,93 @@ GLOBAL_LIST_INIT(nonhuman_positions, list(
 
 GLOBAL_LIST_INIT(noble_positions, list(
 	/datum/job/roguetown/lord::title,
-	/datum/job/roguetown/nobleman::title,
-	/datum/job/roguetown/hand::title,
-	/datum/job/roguetown/captain::title,
-	/datum/job/roguetown/marshal::title,
-	/datum/job/roguetown/steward::title,
-	/datum/job/roguetown/clerk::title,
-	/datum/job/roguetown/knight::title
+	"Nobleman",
+	"Hand",
+	"Knight Captain",
+	"Marshal",
+	"Councillor",
+	"Steward",
+	"Knight",
 ))
 
 GLOBAL_LIST_INIT(courtier_positions, list(
-	/datum/job/roguetown/magician::title,
-	/datum/job/roguetown/deacon::title,
-	/datum/job/roguetown/councillor::title,
-	/datum/job/roguetown/jester::title,
-	/datum/job/roguetown/seneschal::title,
-	/datum/job/roguetown/servant::title
+	"Court Magician",
+	"Court Physician",
+	"Jester",
+	"Seneschal",
 ))
 
 GLOBAL_LIST_INIT(garrison_positions, list(
-	/datum/job/roguetown/guardsman::title,
-	/datum/job/roguetown/bogguardsman::title,
-	/datum/job/roguetown/sergeant::title,
-	/datum/job/roguetown/manorguard::title,
-	/datum/job/roguetown/veteran::title,
-	/datum/job/roguetown/hostage::title,
-	/datum/job/roguetown/prisonerr::title,
-	/datum/job/roguetown/squire::title
+	"Watchman",
+	"Warden",
+	"Sergeant",
+	"Man at Arms",
+	"Dungeoneer",
+	"Gatemaster",
 ))
 
 GLOBAL_LIST_INIT(church_positions, list(
-	/datum/job/roguetown/priest::title,
-	/datum/job/roguetown/acolyte::title,
-	/datum/job/roguetown/templar::title,
-	/datum/job/roguetown/churchling::title
+	"Priest",
+	"Confessor",
+	"Acolyte",
+	"Mortician",
+	"Templar",
+	"Druid",
+	"Martyr",
 ))
 
 GLOBAL_LIST_INIT(yeoman_positions, list(
-	/datum/job/roguetown/merchant::title,
-	/datum/job/roguetown/shophand::title,
-	/datum/job/roguetown/barkeep::title,
-	/datum/job/roguetown/blacksmith::title,
-	/datum/job/roguetown/bapprentice::title,
-	/datum/job/roguetown/janitor::title,
-	/datum/job/roguetown/tailor::title
+	"Merchant",
+	"Innkeeper",
+	"Archivist",
+	"Blacksmith",
+	"Armorer",
+	"Weaponsmith",
+	"Tailor",
+	"Alchemist",
+	"Artificer",
+	"Scribe",
+	"Town Elder",
 ))
 
 GLOBAL_LIST_INIT(peasant_positions, list(
-	/datum/job/roguetown/adventurer::title,
-	/datum/job/roguetown/bandit::title,
-	/datum/job/roguetown/pilgrim::title,
-	/datum/job/roguetown/towner::title,
-	/datum/job/roguetown/lunatic::title,
-	/datum/job/roguetown/knavewench::title,
-	/datum/job/roguetown/woodsman::title,
-	/datum/job/roguetown/adventurer/courtagent::title,
-	/datum/job/roguetown/soilson::title,
-	/datum/job/roguetown/wretch::title,
+	"Soilson",
+	"Cook",
+	"Lunatic",
+	"Miner",
+	"Hunter",
+	"Fisher",
+	"Lumberjack",
+	"Towner",
+	"Grabber",
+	"Nightmaster",
+	"Tapster",
+	"Docker",
+	"Prisoner",
+	"Beggar",
+	"Adventurer",
+	"Pilgrim",
+	"Bandit",
+	"Court Agent",
+	"Wretch",
 ))
 
-GLOBAL_LIST_INIT(mages_university_positions, list(
-	/datum/job/roguetown/head_mage::title,
-	/datum/job/roguetown/alchemist::title,
-	/datum/job/roguetown/archivist::title,
-	/datum/job/roguetown/artificer::title,
-	/datum/job/roguetown/apothicant_apprentice::title,
-	/datum/job/roguetown/wapprentice::title
+GLOBAL_LIST_INIT(mercenary_positions, list(
+	"Mercenary",
+	"Desert Rider Mercenary",
+	"Veteran",
+))
+
+GLOBAL_LIST_INIT(youngfolk_positions, list(
+	"Squire",
+	"Clerk",
+	"Apothecary",
+	"Smithy Apprentice",
+	"Magicians Associate",
+	"Churchling",
+	"Servant",
+	"Shophand",
+	"Vagabond",
 ))
 
 GLOBAL_LIST_INIT(allmig_positions, list(
@@ -136,6 +157,17 @@ GLOBAL_LIST_INIT(allmig_positions, list(
 
 GLOBAL_LIST_INIT(roguewar_positions, list(
 	"Adventurer",
+))
+
+GLOBAL_LIST_INIT(roguefight_positions, list(
+	"Red Captain",
+	"Red Caster",
+	"Red Ranger",
+	"Red Fighter",
+	"Green Captain",
+	"Green Caster",
+	"Green Ranger",
+	"Green Fighter",
 ))
 
 GLOBAL_LIST_INIT(test_positions, list(
@@ -152,7 +184,7 @@ GLOBAL_LIST_INIT(job_assignment_order, get_job_assignment_order())
 	sorting_order += GLOB.church_positions
 	sorting_order += GLOB.yeoman_positions
 	sorting_order += GLOB.peasant_positions
-	sorting_order += GLOB.mages_university_positions
+	sorting_order += GLOB.youngfolk_positions
 	return sorting_order
 
 GLOBAL_LIST_INIT(exp_jobsmap, list(
