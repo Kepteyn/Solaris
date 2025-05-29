@@ -1,9 +1,15 @@
-Welcome back to Solaris!
-What's not a gnelf? Not a gnoblin? GNOMES! Now playable!
-Pilgrims are now selectable roundstart and via latejoin directly rather than being migrant locked.
-Flag color selection has been expanded significantly, with the default colors now white and gold.
-Botany has been expanded heavily with new crops to work on and with - treats blooming from from each!
-Combat music has been overhauled, alongside more area tracks!
-Potion's color significance has been inverted, and their descriptions less made grim-dark-ish.
+Welcome back to Solaris Ridge!
 
-Have fun!
+Your... pintle, should you have one. Should look slightly more refined. If you can be after saying the word 'Pintle', anyways. Pintle.
+The 'People I Know' menu now displays remembered species.
+Salted fish now have sprites! Oops.
+A significant expansion to drinks and brewing has been merged!
+Characters with low strength can no longer immediately slip out of nets.
+The keep is no longer AA. How did I miss that?!
+Doors now rely on mapping access helpers for their lockid!
+Deathsight and Signal Horns should be slightly more specific, if not cryptic.
+Constructs can now play any job!
+Werewolves are back in rotation!
+Mappers are getting whimsical with new tree-based turfs to play with.
+Gunsmithing has become significantly more proficient - and less expensive - QOL-wise.
+And, finally - one of the dungeons has been moved, made harder, and redesigned. I see you.

@@ -5,11 +5,11 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	f_title = "Marquise"
 	flag = LORD
 	department_flag = NOBLEMEN
+	selection_color = JCOLOR_NOBLE
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	selection_color = JCOLOR_NOBLE
-	allowed_races = RACES_NO_CONSTRUCT
+	allowed_races = RACES_ALL_KINDS
 	allowed_sexes = list(MALE, FEMALE)
 
 	spells = list(
@@ -41,7 +41,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	faction = "Station"
 	total_positions = 0
 	spawn_positions = 0
-	display_order = JDO_LADY
+	display_order = JDO_LORD
 	give_bank_account = TRUE
 
 
@@ -258,7 +258,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 /obj/effect/proc_holder/spell/self/convertrole/bog
 	name = "Recruit Warden"
 	new_role = "Warden"
-	recruitment_faction = "Bog Guard"
+	recruitment_faction = "Warden"
 	recruitment_message = "Serve the Wardens, %RECRUIT!"
 	accept_message = "FOR THE GROVE!"
 	refuse_message = "I refuse."

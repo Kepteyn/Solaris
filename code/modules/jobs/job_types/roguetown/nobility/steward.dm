@@ -6,7 +6,7 @@
 	total_positions = 1
 	spawn_positions = 1
 
-	allowed_races = RACES_NO_CONSTRUCT
+	allowed_races = RACES_ALL_KINDS
 	allowed_patrons = ALL_PATRONS
 	allowed_sexes = list(MALE, FEMALE)
 	display_order = JDO_STEWARD
