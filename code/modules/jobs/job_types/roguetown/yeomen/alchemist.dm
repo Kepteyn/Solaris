@@ -1,16 +1,21 @@
 /datum/job/roguetown/alchemist
 	title = "Alchemist"
 	flag = ALCHEMIST
-	department_flag = YEOMEN
+	department_flag = MAGES_UNIVERSITY
+	selection_color = JCOLOR_MAGES
 	faction = "Station"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 0 //disabled until people come and give it some love, Role at the moment is replaced both by head mage and archivist.
+	spawn_positions = 1
 
 	allowed_races = RACES_ALL_KINDS
 
-	tutorial = "You came to Sunmarch after hearing that there is a lack of potion-makers outside of the nobility. Stir up potions with your alchemy expertise--whether of health or death."
+	tutorial = "You're a practiced alchemist under the Mage's University, having honed your craft upon years of study. \
+				While you tutor understudies in a handful of Apothicant Apprentices, it's a rewarding craft that's helped \
+				Solaris Ridge - and your own coin, goodness knows - more times than you can fathom remembering."
 
+	spells = list(/obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 	outfit = /datum/outfit/job/roguetown/alchemist
+	display_order = JDO_ALCHEMIST
 	display_order = 6
 	give_bank_account = 12
 	min_pq = -3
@@ -19,6 +24,7 @@
 /datum/outfit/job/roguetown/alchemist
 	name = "Alchemist"
 	jobtype = /datum/job/roguetown/alchemist
+	backpack_contents = list(/obj/item/book/spellbook = 1)
 
 /datum/outfit/job/roguetown/alchemist/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -35,6 +41,7 @@
 		shirt = /obj/item/clothing/suit/roguetown/shirt/shortshirt
 		belt = /obj/item/storage/belt/rogue/leather
 		beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
+		beltr = /obj/item/storage/keyring/mages_university
 		cloak = /obj/item/clothing/cloak/apron/brown
 	else if(should_wear_femme_clothes(H))
 		pants = /obj/item/clothing/under/roguetown/trou
@@ -42,4 +49,5 @@
 		shirt = /obj/item/clothing/suit/roguetown/shirt/shortshirt
 		belt = /obj/item/storage/belt/rogue/leather
 		beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
+		beltr = /obj/item/storage/keyring/mages_university
 		cloak = /obj/item/clothing/cloak/apron/brown

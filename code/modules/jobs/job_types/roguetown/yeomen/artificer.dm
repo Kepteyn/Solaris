@@ -36,6 +36,7 @@
 		H.mind.adjust_skillrank(/datum/skill/craft/smelting, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/traps, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/craft/alchemy, 2, TRUE)
 
 	head = /obj/item/clothing/head/roguetown/articap
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/jacket/artijacket
@@ -58,3 +59,4 @@
 	H.change_stat("intelligence", 2)
 	H.change_stat("endurance", 1)
 	H.change_stat("constitution", 1)
+	ADD_TRAIT(H, TRAIT_ARCANE_T1, TRAIT_GENERIC)

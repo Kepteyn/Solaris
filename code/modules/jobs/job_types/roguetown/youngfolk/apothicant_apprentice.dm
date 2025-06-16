@@ -1,17 +1,20 @@
 /datum/job/roguetown/apothicant_apprentice
 	title = "Apothicant Apprentice"
 	flag = APOTHICANT_APPRENTICE
-	department_flag = SIDEFOLK
+	department_flag = MAGES_UNIVERSITY
+	selection_color = JCOLOR_MAGES
 	faction = "Station"
 	total_positions = 2
 	spawn_positions = 2
 
 	allowed_races = RACES_ALL_KINDS
 	allowed_ages = list(AGE_ADULT)
+	spells = list(/obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 
-	tutorial = "As part of your studies at the University; you were put under the tutelage of the court's Magician. While it feels you oft hinder more than help, \
-				you've earned your keep here all the same. More specifically, you were put on as their understudy Apothecary, and have been dabbling in the art of \
-				alchemy for your studies..."
+	tutorial = "You're a novice study on Alchemy under the Mage's University, doing your best to learn and hone your \
+				craft under the tutelage of Sunmarch's guildhall for the Mage's University and it's leader therein. \
+				Answering directly to the Alchemists who've managed, you find it isn't always easy, alchemy a gruelling \
+				process of trial and error - but it's rewards tempt you further within..."
 
 	outfit = /datum/outfit/job/roguetown/apothecary
 
@@ -30,8 +33,8 @@
 	armor = /obj/item/clothing/suit/roguetown/shirt/robe/black
 	belt = /obj/item/storage/belt/rogue/leather/rope
 	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
-	beltl = /obj/item/storage/belt/rogue/surgery_bag/full/physician
-	beltr = /obj/item/roguekey/physician
+	beltl = /obj/item/book/spellbook
+	beltr = /obj/item/storage/keyring/mages_university
 	id = /obj/item/scomstone/bad
 	shoes = /obj/item/clothing/shoes/roguetown/simpleshoes
 	backr = /obj/item/storage/backpack/rogue/satchel

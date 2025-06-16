@@ -2,6 +2,7 @@
 	title = "Death Knight"
 	flag = DEATHKNIGHT
 	department_flag = SLOP
+	selection_color = JCOLOR_SLOP
 	faction = "Station"
 	total_positions = 0
 	spawn_positions = 0
@@ -73,20 +74,23 @@
 		ADD_TRAIT(H, TRAIT_NOSLEEP, TRAIT_GENERIC)
 		ADD_TRAIT(H, TRAIT_SHOCKIMMUNE, TRAIT_GENERIC)
 		ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
+		ADD_TRAIT(H, TRAIT_ARCANE_T2, TRAIT_GENERIC)
 		for(var/obj/item/bodypart/B in H.bodyparts)
 			B.skeletonize(FALSE)
 		H.update_body()
 
 /datum/outfit/job/roguetown/deathknight/pre_equip(mob/living/carbon/human/H)
 	..()
-	H.mind.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/misc/riding, 3, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/magic/arcane, 3, TRUE)
+	if(H.mind)
+		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/riding, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/magic/arcane, 3, TRUE)
+		H.mind.adjust_spellpoints(7)
 
 
 	belt = /obj/item/storage/belt/rogue/leather
@@ -106,8 +110,9 @@
 
 	H.ambushable = FALSE
 
-	var/datum/antagonist/new_antag = new /datum/antagonist/skeleton/knight()
-	H.mind.add_antag_datum(new_antag)
+	if(H.mind)
+		var/datum/antagonist/new_antag = new /datum/antagonist/skeleton/knight()
+		H.mind.add_antag_datum(new_antag)
 
 /obj/item/clothing/suit/roguetown/armor/plate/blkknight/death
 	color = CLOTHING_BLACK
